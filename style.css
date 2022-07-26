@@ -1,9 +1,7 @@
 body {
   background-color: #fcfcfc;
   font-size: 16px;
-  color: #AAAAAB;
 }
-/*font-family: 'Lato', sans-serif;*/
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,13 +10,14 @@ body {
 }
 /*container=====================*/
 .container {
-  width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*header=======================*/
 .header {
-  height: 1100px;
+  padding-bottom: 30px;
   background-image: url("bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -41,6 +40,8 @@ body {
   font-size: 2rem;
   text-decoration: none;
   padding-right: 5px;
+  color: #aaaaab;
+  transition: color 0.3s;
 }
 .nav__link {
   margin-left: 74px;
@@ -50,35 +51,23 @@ body {
   font-weight: 700;
   color: #242424;
 }
-.nav a {
-  color: #aaaaab;
-  transition: color 0.3s;
-}
 .nav a:hover {
   color: #56597a;
 }
-/*inrto========================*/
-/* .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 800px;
-    width: 1440px;
-   } */
 .intro__title {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   color: #f1659e;
   font-weight: 500;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .intro__title_1 {
   font-family: "Roboto", sans-serif;
-  font-size: 64px;
+  font-size: 52px;
   color: #56597a;
   font-weight: 900;
   margin: 0;
-  line-height: 74px;
+  /* line-height: 74px; */
 }
 .intro__title_2 {
   font-family: "Lato", sans-serif;
@@ -93,14 +82,6 @@ body {
 
 }
 /*Services========================*/
-.Services {
-  background-color: #fcfcfc;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 750px;
-  width: 1440px;
-}
 
 .button-services {
   width: 100%;
@@ -123,16 +104,14 @@ body {
   font-size: 34px;
   color: #56597a;
   font-weight: 900;
-  margin: 0;
-  line-height: 74px;
+  text-align: center;
 }
 .intro__title_4 {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #f78cb6;
   font-weight: 400;
-  margin: 0;
-  line-height: 32px;
+  margin: 0 10px;
 }
 /*button========================*/
 .button {
@@ -177,11 +156,6 @@ body {
   opacity: 1;
   right: 0;
 }
-
-.block_1 {
-  height: 700px;
-}
-
 .block_2 {
   height: 850px;
 }
@@ -263,6 +237,7 @@ input[type="text"] {
 .container {
   width: 1170px;
   margin: 0 auto;
+  display: flex;
 }
 .life-is-pain {
   text-align: center;
@@ -275,3 +250,28 @@ input[type="text"] {
   text-align: center;
   margin: 0 auto;
 }
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Services .intro__title, .intro__title_1 {
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.cards button {
+  width: 260px;
+}
+.block_1 {
+  margin-top: 70px;
+}
+.row1 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
