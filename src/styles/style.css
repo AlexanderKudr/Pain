@@ -130,7 +130,7 @@ body {
   background-color: #f78cb6; 
   color: white;
   transition: background-color 1s;
-  box-shadow: 0 0 10px 1px rgb(234, 234, 234);
+  box-shadow: 0 0 10px 3px rgb(234, 234, 234);
 }
 .svg-pics {
   fill: #f78cb6;
