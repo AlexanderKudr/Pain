@@ -34,7 +34,6 @@ body {
 .col-lg-7 {
   margin-top: 10px;
 }
-
 /*nav==========================*/
 .nav {
   display: flex;
@@ -121,6 +120,10 @@ body {
   border: 0px solid #f78cb6;
   height: 307px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 /*=================*/
 .button3 {
@@ -130,7 +133,7 @@ body {
   background-color: #f78cb6; 
   color: white;
   transition: background-color 1s;
-  box-shadow: 0 0 10px 3px rgb(234, 234, 234);
+  box-shadow: 1px 0 2px 2px rgb(230, 227, 227);
 }
 .svg-pics {
   fill: #f78cb6;
@@ -173,14 +176,12 @@ body {
   transition: all 0.5s;
   cursor: pointer;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
   content: "\00bb";
   position: absolute;
@@ -278,16 +279,47 @@ input[type="text"] {
 .Services .intro__title, .intro__title_1 {
   text-align: center;
 }
-/* .Services {
-  margin-top: 270px;
-} */
 .cards {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
+
 .cards button {
   width: 250px;
+}
+.card1 {
+  position: relative;
+}
+.card1 svg {
+  position: absolute;
+  left: 95px;
+  top: 85px;
+}
+.card2 {
+  position: relative;
+}
+.card2 svg {
+  position: absolute;
+  left: 95px;
+  top: 85px;
+}
+.card3 {
+  position: relative;
+}
+.card3 svg {
+  position: absolute;
+  left: 95px;
+  top: 85px;
+}
+.card4 {
+  position: relative;
+}
+.card4 svg {
+  position: absolute;
+  left: 95px;
+  top: 85px;
 }
 .block_1 {
   margin-top: 70px;
