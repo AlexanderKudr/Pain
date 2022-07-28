@@ -1,23 +1,24 @@
 body {
   background-color: #fcfcfc;
   font-size: 16px;
+  background-image: url(../styles/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  /* outline: 1px red solid;   */
 }
 /*container=====================*/
 .container {
   max-width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 /*header=======================*/
 .header {
-  padding-bottom: 30px;
   background-image: url("bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -28,13 +29,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 58px 0;
+  padding: 18px 0;
+}
+.col-lg-7 {
+  margin-top: 10px;
 }
 
 /*nav==========================*/
 .nav {
   display: flex;
   font-weight: 500;
+  padding-right: 10px;
 }
 .nav a {
   font-size: 2rem;
@@ -59,15 +64,16 @@ body {
   font-size: 28px;
   color: #f1659e;
   font-weight: 500;
-  /* margin-top: 100px; */
+  margin-bottom: -10px;
 }
 .intro__title_1 {
   font-family: "Roboto", sans-serif;
   font-size: 52px;
   color: #56597a;
   font-weight: 900;
-  margin: 0;
-  /* line-height: 74px; */
+  text-indent: -2.2rem;
+  text-align-last: left;
+  margin-bottom: 10px;
 }
 .intro__title_2 {
   font-family: "Lato", sans-serif;
@@ -78,8 +84,29 @@ body {
   line-height: 32px;
 }
 .col-lg-5 img {
-  margin-top: 70px;
+  margin-top: 30px;
+  margin-left: 10px;
 
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.row p {
+  padding: 20px 0;
+}
+.row button {
+  margin-top: 15px;
+}
+.choose-us {
+  font-family: "Roboto", sans-serif;
+  font-size: 52px;
+  color: #56597a;
+  font-weight: 900;
+  padding-bottom: 30px;
+  text-align: center;
 }
 /*Services========================*/
 
@@ -95,8 +122,25 @@ body {
   height: 307px;
   padding: 10px;
 }
+/*=================*/
+.button3 {
+  transition: background-color 0.5s;
+}
 .button3:hover {
-  background-color: #f78cb6;
+  background-color: #f78cb6; 
+  color: white;
+  transition: background-color 1s;
+  box-shadow: 0 0 10px 1px rgb(234, 234, 234);
+}
+.svg-pics {
+  fill: #f78cb6;
+}
+.button3:hover .svg-pics {
+  fill: rgb(255, 255, 255);
+  stroke: #ffffff;
+  stroke-width: 0.06rem;
+}
+.button3:hover p {
   color: white;
 }
 .intro__title_3 {
@@ -155,30 +199,13 @@ body {
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-.block_2 {
-  height: 850px;
-}
-
-.block_3 {
-  height: 600px;
-}
-
-.block_4 {
-  height: 200px;
-}
-.block_5 {
-  height: 600px;
-}
-
+} 
 .blog {
   background-color: #fcfcfc;
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  width: 1440px;
 }
-
 .footer {
   height: 200px;
   background-image: url("footerbg.svg");
@@ -222,7 +249,6 @@ input[type="text"] {
 }
 .rights-reserved {
   width: 100%;
-  max-width: 1170px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
   color: #ffffff;
@@ -232,12 +258,6 @@ input[type="text"] {
 .mirage-footer {
   background-color: #f78bb6;
   height: 54px;
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
-  display: flex;
 }
 .life-is-pain {
   text-align: center;
@@ -258,13 +278,16 @@ input[type="text"] {
 .Services .intro__title, .intro__title_1 {
   text-align: center;
 }
+/* .Services {
+  margin-top: 270px;
+} */
 .cards {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 .cards button {
-  width: 260px;
+  width: 250px;
 }
 .block_1 {
   margin-top: 70px;
