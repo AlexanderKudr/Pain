@@ -26,6 +26,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
+  position: -webkit-sticky; 
   position: sticky;
   height: 85px; 
   background: linear-gradient(
@@ -95,6 +96,7 @@ body {
   color: #56597a;
   font-weight: 900;
   text-indent: -2.2rem;
+  -moz-text-align-last: left;
   text-align-last: left;
   margin-bottom: 10px;
 }
@@ -372,7 +374,8 @@ input[type="text"] {
     color: #56597a;
     font-weight: 900;
     text-indent: -0.1rem;
-    text-align-last: left;
+    -moz-text-align-last: left;
+         text-align-last: left;
     margin-bottom: 10px;
 }
 .our-teamwork {
