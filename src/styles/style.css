@@ -97,7 +97,7 @@ body {
   font-weight: 900;
   text-indent: -2.2rem;
   -moz-text-align-last: left;
-  text-align-last: left;
+       text-align-last: left;
   margin-bottom: 10px;
 }
 .intro__title_2 {
@@ -270,6 +270,8 @@ input[type="text"] {
   padding: 15px 20px 15px 40px;
 }
 .input-form {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
   max-width: max-content;
   margin: auto;
   text-align: center;
@@ -383,5 +385,14 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   margin-top: -50px;
+}
+#home,
+#services,
+#teamwork,
+#blog {
+  scroll-margin-top: 9rem;
+}
+#about {
+  scroll-margin-top: 7rem;
 }
 
