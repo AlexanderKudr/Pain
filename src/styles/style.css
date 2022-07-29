@@ -41,7 +41,7 @@ body {
 
 /*nav==========================*/
 .header-logo {
-  margin-top: -3px;
+  margin-top: -6px;
 }
 .nav {
   display: flex;
@@ -58,21 +58,29 @@ body {
 .nav__link {
   margin-left: 74px;
   color: #aaaaab;
+  transition: 0.1s;
 }
 .home {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.2rem;
   color: #56597a;
   margin-left: 74px;
   margin-top: -2px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .home:hover {
   text-decoration: none;
-  transform: scale(0.90);
+  transform: scale(0.98);
 }
-.nav a:hover {
-  color: #56597a;
+.home:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #f78bb6;  
+  transform: scaleX(0);  
+  transition: transform 200ms ease-in-out;
+}
+.home:hover:after {
+  transform: scaleX(1); 
 }
 .intro__title {
   font-family: "Roboto", sans-serif;
@@ -340,6 +348,9 @@ input[type="text"] {
 }
 .design-things {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .row1 {
   display: flex;
@@ -356,12 +367,18 @@ input[type="text"] {
   line-height: 32px;
 }
 .design-h1 {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 52px;
     color: #56597a;
     font-weight: 900;
     text-indent: -0.1rem;
     text-align-last: left;
     margin-bottom: 10px;
+}
+.our-teamwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
 }
 
