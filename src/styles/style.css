@@ -28,7 +28,7 @@ body {
   align-items: center; 
   position: -webkit-sticky; 
   position: sticky;
-  height: 85px; 
+  height: 80px; 
   background: linear-gradient(
     to right,
     #fff6f9,
@@ -38,6 +38,9 @@ body {
   z-index: 1;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
 }
 
 /*nav==========================*/
