@@ -388,6 +388,11 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   margin-top: -50px;
+  margin-bottom: 40px;
+}
+.our-teamwork .col-lg-6 {
+  display: flex;
+  flex-direction: column;
 }
 #home,
 #services,
@@ -398,4 +403,65 @@ input[type="text"] {
 #about {
   scroll-margin-top: 7.1rem;
 }
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.testimonial img {
+  margin-left: -10px;
+}
+.labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+.subscribe-blog {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 52px;
+  color: #56597a;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
+.subscribe .blog-desc {
+    width: 500px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    color: hsl(233, 4%, 58%);
+    font-weight: 400;
+    line-height: 32px;
+}
+.subscribe {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.subscribe .balloon {
+  margin-left: -80px;
+}
+.subscribe input[type=text] {
+  border: 0.1em;
+}
+.subscribe input {
+  transition: background-color 0.2s;
+}
+.subscribe input[type=text]:focus {
+  outline: none;
+  background-color: #fff1f6;
+  transition: background-color 0.2s;
+}
+.subscribe .input-form {
+  box-shadow: 0 10px 15px 1px rgb(224, 224, 224);
+}
+.footer {
+  height: 300px;
+}
