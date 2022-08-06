@@ -287,10 +287,13 @@ input[type="text"] {
   color: #ffffff;
   padding-top: 10px;
   line-height: 32px;
+  padding-left: 20px;
 }
 .mirage-footer {
   background-color: #f78bb6;
   height: 54px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .life-is-pain {
   text-align: center;
@@ -463,5 +466,23 @@ input[type="text"] {
   box-shadow: 0 10px 15px 1px rgb(224, 224, 224);
 }
 .footer {
-  height: 310px;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.block .icons {
+  padding: 20px 0;
+  margin-left: -35px;
+}
+.block .fa-brands {
+  transition: color 0.3s;
+  padding: 5px;
+}
+.block .fa-brands:hover {
+  color: #f78cb6;
+  cursor: pointer;
+}
+.footer .block {
+  width: 200px;
 }
