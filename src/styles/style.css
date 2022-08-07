@@ -9,10 +9,17 @@
 body {
   background-color: #fcfcfc;
   font-size: 16px;
-  background-image: url(../styles/images/bg.png);
+  background-image: 
+    url(../styles/images/bg.png),
+    url(../styles/images/2.png),
+    url(../styles/images/3.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: 
+    top right,
+    center left,
+    bottom center;
 }
+
 /*container=====================*/
 .container {
   max-width: 1100px;
@@ -398,10 +405,12 @@ input[type="text"] {
   flex-direction: column;
 }
 #home,
-#services,
 #teamwork,
 #blog {
   scroll-margin-top: 9rem;
+}
+#services {
+  scroll-margin-top: 11rem;
 }
 #about {
   scroll-margin-top: 7.1rem;
@@ -450,6 +459,10 @@ input[type="text"] {
 }
 .subscribe .balloon {
   margin-left: -80px;
+}
+.balloon svg {
+    z-index: -1;
+    position: relative;
 }
 .subscribe input[type=text] {
   border: 0.1em;
