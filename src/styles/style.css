@@ -488,6 +488,9 @@ input[type="text"] {
   padding: 20px 0;
   margin-left: -35px;
 }
+.fa-brands {
+  color: #56597a;
+}
 .block .fa-brands {
   transition: color 0.3s;
   padding: 5px;
